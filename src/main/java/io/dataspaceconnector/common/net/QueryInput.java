@@ -27,18 +27,18 @@ import lombok.Data;
 @Schema(
         name = "QueryInput",
         description = "Query parameters, headers and path variables as maps",
-        implementation = QueryInput.class,
         example = "{\n"
-                  + "  \"headers\": {\n"
-                  + "    \"key\": \"value\"\n"
-                  + "  },\n"
-                  + "  \"params\": {\n"
-                  + "    \"key\": \"value\"\n"
-                  + "  },\n"
-                  + "  \"pathVariables\": {\n"
-                  + "    \"key\": \"value\"\n"
-                  + "  }\n"
-                  + "}"
+        		+ "  \"headers\": {\n"
+        		+ "    \"key\": \"value\"\n"
+        		+ "  },\n"
+        		+ "  \"params\": {\n"
+        		+ "    \"key\": \"value\"\n"
+        		+ "  },\n"
+        		+ "  \"pathVariables\": {\n"
+        		+ "    \"key\": \"value\"\n"
+        		+ "  },\n"
+        		+ "  \"optional\": \"basePathExtension\"\n"
+        		+ "}"
 )
 @Data
 public class QueryInput {
